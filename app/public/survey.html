@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <title>Survey</title>
+    <!-- Boostrap & JQuery CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Font Awesome  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<!-- Chosen/AJAX CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+<style>
+
+body {
+background-color:lightblue;
+ }
+ h3 {
+	 color: red;
+ }
+
+ h2 {
+	 color:blue;
+ }
+
+ h4 {
+	 font-style:bolder;
+ }
+
+</style>
+</head>
+<body>
+<!-- Starting Survey Questions -->
+<div class="container">
+	<h2>Survey Questions</h2>
+	<hr>
+
+		<h3><strong>About You</strong></h3>
+		<h4>Name (Required)</h4>
+		<input type="text" name="" id="name" class="form-control" required >
+
+		<h4>Link to Photo Image (Required)</h4>
+		<input type="text" name="" id="photo" class="form-control" required >
+
+	<hr>
+	<h3><strong>Question #1</strong></h3>
+		<h4>You consider yourself more of a dreamer than an action seeker</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q1">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+<br>
+		<h3><strong>Question #2</strong></h3>
+		<h4>Traveling is better than staying home and Netflix</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q2">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+<br>
+		<h3><strong>Question #3</strong></h3>
+		<h4>The glass is half empty not half full</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q3">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+<br>
+		<h3><strong>Question #4</strong></h3>
+		<h4>Experience is more valuable than education</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q4">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+<br>
+		<h3><strong>Question #5</strong></h3>
+		<h4>Pizza is way better than a Kale Salad</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q5">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+<br>
+		<h3><strong>Question #6</strong></h3>
+		<h4>You consider other people's emotions before your own</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q6">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+<br>
+		<h3><strong>Question #7</strong></h3>
+		<h4>You're easily distracted</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q7">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+<br>
+		<h3><strong>Question #8</strong></h3>
+		<h4>An animals well being is just as important than ours</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q8">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+<br>
+		<h3><strong>Question #9</strong></h3>
+		<h4>You would rather be an individual than to fit-in</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q9">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+<br>
+		<h3><strong>Question #10</strong></h3>
+		<h4>This survey was awesome</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q10">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+		 </select>
+		<br><br><br>
+		<button type="submit" class="btn btn-danger btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+ Submit</button>
+
+		<hr>
+	    <footer class="footer">
+	      <div class="container">
+		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/rogrly/FriendFinder">GitHub Repo</a></p>
+	      </div>
+			</footer>
+			
+	</div>
+	<!-- Setting Modal Dialog/Content for Best Friend Match Pop Up Results-->
+	<div id="resultsModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h2 class="modal-title"><strong>Best Friend Match</strong></h2>
+	      </div>
+	      <div class="modal-body">
+	        <h2 id="friendName"></h2>
+	        <img id="friendPic" src="" alt="">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	 <script type="text/javascript">
+  	//Setting "Chosen" CSS for Input Forms
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+      '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+    //JQuery on click function for "Submit" button
+    $("#submit").on("click", function(){
+    //Form Validation
+    	function validateForm() {
+		  var isValid = true;
+		  $('.form-control').each(function() {
+		    if ( $(this).val() === '' )
+		        isValid = false;
+		  });
+
+		  $('.chosen-select').each(function() {
+
+		  	if( $(this).val() === "")
+		  		isValid = false
+		  })
+		  return isValid;
+		}
+		//Validate Forms are all filled then execute
+		if (validateForm() == true)
+		{
+			//Generate a user's input into a JS Object to be pushed into Array
+	    	var userForm = {
+	    		name: $("#name").val(),
+	    		photo: $("#photo").val(),
+					scores: [$("#q1").val(), 
+					$("#q2").val(), 
+					$("#q3").val(),
+					 $("#q4").val(), 
+					 $("#q5").val(), 
+					 $("#q6").val(), 
+					 $("#q7").val(), 
+					 $("#q8").val(), 
+					 $("#q9").val(),
+					  $("#q10").val(), ]
+	    	}
+	    	var currentURL = window.location.origin;
+	    	//Appending user's input into friendMatch Array
+	    	$.post(currentURL + "/api/friends", userForm, function(data){
+	    		//Results from "Post" displaying the best friend's name and picture from friends.js
+	    		$("#friendName").text(data.name);
+	    		$("#friendPic").attr("src", data.photo);
+		    	//Toggle modal results viewer
+		    	$("#resultsModal").modal('toggle');
+
+	    	});
+		}
+		else
+		{
+			alert("All input fields must be filled before submission");
+		}
+    	return false;
+		});
+		
+  </script>
+</body>
+</html>
